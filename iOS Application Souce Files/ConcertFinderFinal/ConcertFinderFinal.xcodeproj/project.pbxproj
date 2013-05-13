@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9209E0816534D2C0076B15B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9209E0716534D2C0076B15B /* UIKit.framework */; };
+		F9209E0A16534D2C0076B15B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9209E0916534D2C0076B15B /* Foundation.framework */; };
+		F9209E0C16534D2C0076B15B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9209E0B16534D2C0076B15B /* CoreGraphics.framework */; };
+		F9209E1216534D2C0076B15B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9209E1016534D2C0076B15B /* InfoPlist.strings */; };
+		F9209E1416534D2C0076B15B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9209E1316534D2C0076B15B /* main.m */; };
+		F9209E4F16534D7F0076B15B /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F9209E3316534D7F0076B15B /* XMLParser.m */; };
+		F9209E5016534D7F0076B15B /* ConcertDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9209E3516534D7F0076B15B /* ConcertDetailViewController.m */; };
+		F9209E5116534D7F0076B15B /* ConcertDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9209E3616534D7F0076B15B /* ConcertDetailViewController.xib */; };
+		F9209E5216534D7F0076B15B /* ConcertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9209E3716534D7F0076B15B /* ConcertCell.xib */; };
+		F9209E5316534D7F0076B15B /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F9209E3916534D7F0076B15B /* Annotation.m */; };
+		F9209E5416534D7F0076B15B /* IpodLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9209E3B16534D7F0076B15B /* IpodLibraryViewController.m */; };
+		F9209E5516534D7F0076B15B /* IpodLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9209E3C16534D7F0076B15B /* IpodLibraryViewController.xib */; };
+		F9209E5616534D7F0076B15B /* IpodLibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9209E3D16534D7F0076B15B /* IpodLibraryCell.xib */; };
+		F9209E5716534D7F0076B15B /* ConcertMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9209E3F16534D7F0076B15B /* ConcertMapView.m */; };
+		F9209E5816534D7F0076B15B /* ConcertMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9209E4016534D7F0076B15B /* ConcertMapView.xib */; };
+		F9209E5916534D7F0076B15B /* FavouriteConcerts.m in Sources */ = {isa = PBXBuildFile; fileRef = F9209E4216534D7F0076B15B /* FavouriteConcerts.m */; };
+		F9209E5A16534D7F0076B15B /* FavoriteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9209E4316534D7F0076B15B /* FavoriteCell.xib */; };
+		F9209E5B16534D7F0076B15B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9209E4516534D7F0076B15B /* MapViewController.m */; };
+		F9209E5C16534D7F0076B15B /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9209E4616534D7F0076B15B /* MapViewController.xib */; };
+		F9209E5D16534D7F0076B15B /* CitySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9209E4816534D7F0076B15B /* CitySearchViewController.m */; };
+		F9209E5E16534D7F0076B15B /* CitySearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9209E4916534D7F0076B15B /* CitySearchViewController.xib */; };
+		F9209E5F16534D7F0076B15B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9209E4B16534D7F0076B15B /* SearchViewController.m */; };
+		F9209E6016534D7F0076B15B /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9209E4C16534D7F0076B15B /* SearchViewController.xib */; };
+		F9209E6116534D7F0076B15B /* MCProjectAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9209E4E16534D7F0076B15B /* MCProjectAppDelegate.m */; };
+		F9209E6C16534DB10076B15B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F9209E6816534DB10076B15B /* icon.png */; };
+		F9209E6D16534DB10076B15B /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = F9209E6916534DB10076B15B /* search.png */; };
+		F9209E6E16534DB10076B15B /* FavStar.png in Resources */ = {isa = PBXBuildFile; fileRef = F9209E6A16534DB10076B15B /* FavStar.png */; };
+		F9209E6F16534DB10076B15B /* MapIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F9209E6B16534DB10076B15B /* MapIcon.png */; };
+		F9209E7116534E090076B15B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9209E7016534E090076B15B /* MapKit.framework */; };
+		F9209E7316534E130076B15B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9209E7216534E130076B15B /* CoreLocation.framework */; };
+		F9209E7516534E220076B15B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9209E7416534E220076B15B /* MediaPlayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F9209E0316534D2C0076B15B /* ConcertFinderFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcertFinderFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9209E0716534D2C0076B15B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F9209E0916534D2C0076B15B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F9209E0B16534D2C0076B15B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F9209E0F16534D2C0076B15B /* ConcertFinderFinal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConcertFinderFinal-Info.plist"; sourceTree = "<group>"; };
+		F9209E1116534D2C0076B15B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F9209E1316534D2C0076B15B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F9209E1516534D2C0076B15B /* ConcertFinderFinal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConcertFinderFinal-Prefix.pch"; sourceTree = "<group>"; };
+		F9209E3216534D7F0076B15B /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		F9209E3316534D7F0076B15B /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		F9209E3416534D7F0076B15B /* ConcertDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcertDetailViewController.h; sourceTree = "<group>"; };
+		F9209E3516534D7F0076B15B /* ConcertDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcertDetailViewController.m; sourceTree = "<group>"; };
+		F9209E3616534D7F0076B15B /* ConcertDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConcertDetailViewController.xib; sourceTree = "<group>"; };
+		F9209E3716534D7F0076B15B /* ConcertCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConcertCell.xib; sourceTree = "<group>"; };
+		F9209E3816534D7F0076B15B /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		F9209E3916534D7F0076B15B /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		F9209E3A16534D7F0076B15B /* IpodLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpodLibraryViewController.h; sourceTree = "<group>"; };
+		F9209E3B16534D7F0076B15B /* IpodLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IpodLibraryViewController.m; sourceTree = "<group>"; };
+		F9209E3C16534D7F0076B15B /* IpodLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IpodLibraryViewController.xib; sourceTree = "<group>"; };
+		F9209E3D16534D7F0076B15B /* IpodLibraryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IpodLibraryCell.xib; sourceTree = "<group>"; };
+		F9209E3E16534D7F0076B15B /* ConcertMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcertMapView.h; sourceTree = "<group>"; };
+		F9209E3F16534D7F0076B15B /* ConcertMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcertMapView.m; sourceTree = "<group>"; };
+		F9209E4016534D7F0076B15B /* ConcertMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConcertMapView.xib; sourceTree = "<group>"; };
+		F9209E4116534D7F0076B15B /* FavouriteConcerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteConcerts.h; sourceTree = "<group>"; };
+		F9209E4216534D7F0076B15B /* FavouriteConcerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteConcerts.m; sourceTree = "<group>"; };
+		F9209E4316534D7F0076B15B /* FavoriteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteCell.xib; sourceTree = "<group>"; };
+		F9209E4416534D7F0076B15B /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		F9209E4516534D7F0076B15B /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		F9209E4616534D7F0076B15B /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		F9209E4716534D7F0076B15B /* CitySearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySearchViewController.h; sourceTree = "<group>"; };
+		F9209E4816534D7F0076B15B /* CitySearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySearchViewController.m; sourceTree = "<group>"; };
+		F9209E4916534D7F0076B15B /* CitySearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CitySearchViewController.xib; sourceTree = "<group>"; };
+		F9209E4A16534D7F0076B15B /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		F9209E4B16534D7F0076B15B /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		F9209E4C16534D7F0076B15B /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		F9209E4D16534D7F0076B15B /* MCProjectAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCProjectAppDelegate.h; sourceTree = "<group>"; };
+		F9209E4E16534D7F0076B15B /* MCProjectAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCProjectAppDelegate.m; sourceTree = "<group>"; };
+		F9209E6816534DB10076B15B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		F9209E6916534DB10076B15B /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		F9209E6A16534DB10076B15B /* FavStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavStar.png; sourceTree = "<group>"; };
+		F9209E6B16534DB10076B15B /* MapIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapIcon.png; sourceTree = "<group>"; };
+		F9209E7016534E090076B15B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F9209E7216534E130076B15B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F9209E7416534E220076B15B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9209E0016534D2C0076B15B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9209E7516534E220076B15B /* MediaPlayer.framework in Frameworks */,
+				F9209E7316534E130076B15B /* CoreLocation.framework in Frameworks */,
+				F9209E7116534E090076B15B /* MapKit.framework in Frameworks */,
+				F9209E0816534D2C0076B15B /* UIKit.framework in Frameworks */,
+				F9209E0A16534D2C0076B15B /* Foundation.framework in Frameworks */,
+				F9209E0C16534D2C0076B15B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9209DF816534D2B0076B15B = {
+			isa = PBXGroup;
+			children = (
+				F9209E0D16534D2C0076B15B /* ConcertFinderFinal */,
+				F9209E0616534D2C0076B15B /* Frameworks */,
+				F9209E0416534D2C0076B15B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9209E0416534D2C0076B15B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9209E0316534D2C0076B15B /* ConcertFinderFinal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9209E0616534D2C0076B15B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9209E7416534E220076B15B /* MediaPlayer.framework */,
+				F9209E7216534E130076B15B /* CoreLocation.framework */,
+				F9209E7016534E090076B15B /* MapKit.framework */,
+				F9209E0716534D2C0076B15B /* UIKit.framework */,
+				F9209E0916534D2C0076B15B /* Foundation.framework */,
+				F9209E0B16534D2C0076B15B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9209E0D16534D2C0076B15B /* ConcertFinderFinal */ = {
+			isa = PBXGroup;
+			children = (
+				F9209E3216534D7F0076B15B /* XMLParser.h */,
+				F9209E3316534D7F0076B15B /* XMLParser.m */,
+				F9209E3416534D7F0076B15B /* ConcertDetailViewController.h */,
+				F9209E3516534D7F0076B15B /* ConcertDetailViewController.m */,
+				F9209E3616534D7F0076B15B /* ConcertDetailViewController.xib */,
+				F9209E3716534D7F0076B15B /* ConcertCell.xib */,
+				F9209E3816534D7F0076B15B /* Annotation.h */,
+				F9209E3916534D7F0076B15B /* Annotation.m */,
+				F9209E3A16534D7F0076B15B /* IpodLibraryViewController.h */,
+				F9209E3B16534D7F0076B15B /* IpodLibraryViewController.m */,
+				F9209E3C16534D7F0076B15B /* IpodLibraryViewController.xib */,
+				F9209E3D16534D7F0076B15B /* IpodLibraryCell.xib */,
+				F9209E3E16534D7F0076B15B /* ConcertMapView.h */,
+				F9209E3F16534D7F0076B15B /* ConcertMapView.m */,
+				F9209E4016534D7F0076B15B /* ConcertMapView.xib */,
+				F9209E4116534D7F0076B15B /* FavouriteConcerts.h */,
+				F9209E4216534D7F0076B15B /* FavouriteConcerts.m */,
+				F9209E4316534D7F0076B15B /* FavoriteCell.xib */,
+				F9209E4416534D7F0076B15B /* MapViewController.h */,
+				F9209E4516534D7F0076B15B /* MapViewController.m */,
+				F9209E4616534D7F0076B15B /* MapViewController.xib */,
+				F9209E4716534D7F0076B15B /* CitySearchViewController.h */,
+				F9209E4816534D7F0076B15B /* CitySearchViewController.m */,
+				F9209E4916534D7F0076B15B /* CitySearchViewController.xib */,
+				F9209E4A16534D7F0076B15B /* SearchViewController.h */,
+				F9209E4B16534D7F0076B15B /* SearchViewController.m */,
+				F9209E4C16534D7F0076B15B /* SearchViewController.xib */,
+				F9209E4D16534D7F0076B15B /* MCProjectAppDelegate.h */,
+				F9209E4E16534D7F0076B15B /* MCProjectAppDelegate.m */,
+				F9209E0E16534D2C0076B15B /* Supporting Files */,
+			);
+			path = ConcertFinderFinal;
+			sourceTree = "<group>";
+		};
+		F9209E0E16534D2C0076B15B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9209E6816534DB10076B15B /* icon.png */,
+				F9209E6916534DB10076B15B /* search.png */,
+				F9209E6A16534DB10076B15B /* FavStar.png */,
+				F9209E6B16534DB10076B15B /* MapIcon.png */,
+				F9209E0F16534D2C0076B15B /* ConcertFinderFinal-Info.plist */,
+				F9209E1016534D2C0076B15B /* InfoPlist.strings */,
+				F9209E1316534D2C0076B15B /* main.m */,
+				F9209E1516534D2C0076B15B /* ConcertFinderFinal-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9209E0216534D2C0076B15B /* ConcertFinderFinal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9209E2F16534D2C0076B15B /* Build configuration list for PBXNativeTarget "ConcertFinderFinal" */;
+			buildPhases = (
+				F9209DFF16534D2C0076B15B /* Sources */,
+				F9209E0016534D2C0076B15B /* Frameworks */,
+				F9209E0116534D2C0076B15B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConcertFinderFinal;
+			productName = ConcertFinderFinal;
+			productReference = F9209E0316534D2C0076B15B /* ConcertFinderFinal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9209DFA16534D2C0076B15B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MCProject;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Amit Shroff, Rohan Narde";
+			};
+			buildConfigurationList = F9209DFD16534D2C0076B15B /* Build configuration list for PBXProject "ConcertFinderFinal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F9209DF816534D2B0076B15B;
+			productRefGroup = F9209E0416534D2C0076B15B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9209E0216534D2C0076B15B /* ConcertFinderFinal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9209E0116534D2C0076B15B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9209E1216534D2C0076B15B /* InfoPlist.strings in Resources */,
+				F9209E5116534D7F0076B15B /* ConcertDetailViewController.xib in Resources */,
+				F9209E5216534D7F0076B15B /* ConcertCell.xib in Resources */,
+				F9209E5516534D7F0076B15B /* IpodLibraryViewController.xib in Resources */,
+				F9209E5616534D7F0076B15B /* IpodLibraryCell.xib in Resources */,
+				F9209E5816534D7F0076B15B /* ConcertMapView.xib in Resources */,
+				F9209E5A16534D7F0076B15B /* FavoriteCell.xib in Resources */,
+				F9209E5C16534D7F0076B15B /* MapViewController.xib in Resources */,
+				F9209E5E16534D7F0076B15B /* CitySearchViewController.xib in Resources */,
+				F9209E6016534D7F0076B15B /* SearchViewController.xib in Resources */,
+				F9209E6C16534DB10076B15B /* icon.png in Resources */,
+				F9209E6D16534DB10076B15B /* search.png in Resources */,
+				F9209E6E16534DB10076B15B /* FavStar.png in Resources */,
+				F9209E6F16534DB10076B15B /* MapIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9209DFF16534D2C0076B15B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9209E1416534D2C0076B15B /* main.m in Sources */,
+				F9209E4F16534D7F0076B15B /* XMLParser.m in Sources */,
+				F9209E5016534D7F0076B15B /* ConcertDetailViewController.m in Sources */,
+				F9209E5316534D7F0076B15B /* Annotation.m in Sources */,
+				F9209E5416534D7F0076B15B /* IpodLibraryViewController.m in Sources */,
+				F9209E5716534D7F0076B15B /* ConcertMapView.m in Sources */,
+				F9209E5916534D7F0076B15B /* FavouriteConcerts.m in Sources */,
+				F9209E5B16534D7F0076B15B /* MapViewController.m in Sources */,
+				F9209E5D16534D7F0076B15B /* CitySearchViewController.m in Sources */,
+				F9209E5F16534D7F0076B15B /* SearchViewController.m in Sources */,
+				F9209E6116534D7F0076B15B /* MCProjectAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9209E1016534D2C0076B15B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9209E1116534D2C0076B15B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9209E2D16534D2C0076B15B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F9209E2E16534D2C0076B15B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9209E3016534D2C0076B15B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ConcertFinderFinal/ConcertFinderFinal-Prefix.pch";
+				INFOPLIST_FILE = "ConcertFinderFinal/ConcertFinderFinal-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F9209E3116534D2C0076B15B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ConcertFinderFinal/ConcertFinderFinal-Prefix.pch";
+				INFOPLIST_FILE = "ConcertFinderFinal/ConcertFinderFinal-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9209DFD16534D2C0076B15B /* Build configuration list for PBXProject "ConcertFinderFinal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9209E2D16534D2C0076B15B /* Debug */,
+				F9209E2E16534D2C0076B15B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9209E2F16534D2C0076B15B /* Build configuration list for PBXNativeTarget "ConcertFinderFinal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9209E3016534D2C0076B15B /* Debug */,
+				F9209E3116534D2C0076B15B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9209DFA16534D2C0076B15B /* Project object */;
+}
